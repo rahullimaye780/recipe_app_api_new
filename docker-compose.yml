@@ -28,6 +28,9 @@ services:
     volumes:
       - dev-db-data:/var/lib/postgresql/data
 
+    ports:
+      - "5432:5432"
+
     environment:
       - POSTGRES_DB=devdb
       - POSTGRES_USER=devuser
